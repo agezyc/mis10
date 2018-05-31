@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
 	<meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
 	<title>51包装</title>  
   <link rel="stylesheet"  type="text/css" href="css/mis10.css">
   <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -16,8 +15,8 @@
 <header>
 	<div class="headline">
 		<div class="container mwid">
-			<span class="white">客服电话:400-810-9151</span>
-			<span class="pull-right"><a href="" class="white">|登录</a><a href="" class="white loginactived">注册</a></span>
+			<span class="white mask">客服电话:400-810-9151</span>
+			<span class="pull-right"><a href="" class="white">|登录</a><a href="" class="white ">注册</a></span>
 		</div>
 	</div>
 	<nav class="navset">
@@ -32,29 +31,52 @@
 					<li><a href="">标准箱</a></li>
 					<li><a href="">品质保障</a></li>
 				</ul>
-			</div>	
-		</div>
+			</div>
+			<div class="dp">
+		        <div class="dp-cell">
+		            <ul class="nav nav-pills">
+		                <li class="dropdown">
+		                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/f03c.png" style="width:30px;"></a>
+		                    <ul class="scc dropdown-menu">
+		                        <li><a href="#">首页</a></li>
+		                        <li><a href="#">在线定制</a></li>
+		                        <li><a href="#">标准箱</a></li>
+		                        <li><a href="#">品质保障</a></li>
+		                    </ul>
+		                </li>
+		            </ul>
+		        </div>
+   			 </div>	
+    	</div>
 	</div>
 	<div class="navtree">
-		<div class="stepInfo linepostion">
-			<ul class="list-unstyled ">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+		<div class="stepInfo ">
+			<ul class="list-unstyled linepostion">
+				<div class="linere">
+					<li id="linestyle">
+						<div class="stepIco stepIco1">1
+			    			<div class="stepText">1.定制纸箱</div>
+					    </div>
+				    </li>
+					<li id="linestyle">
+						<div class="stepIco stepIco2">2
+					        <div class="stepText">2.选择数量</div>
+					    </div>  
+					</li>
+				</div>
+				<div class="linere">
+					<li id="linestyle">
+					    <div class="stepIco stepIco3">3
+					        <div class="stepText">3.上传附件</div>
+					    </div>
+					</li>
+					<li id="linestyle">
+						<div class="stepIco stepIco4">4
+					        <div class="stepText">4.确认下单</div>
+					    </div>
+					</li>
+				</div>
 			</ul>
-			<div class="stepIco stepIco1">1
-    			<div class="stepText">1.定制纸箱</div>
-		    </div>
-		    <div class="stepIco stepIco2">2
-		        <div class="stepText">2.选择数量</div>
-		    </div>
-		    <div class="stepIco stepIco3">3
-		        <div class="stepText">3.上传附件</div>
-		    </div>
-			<div class="stepIco stepIco4">4
-		        <div class="stepText">4.确认下单</div>
-		    </div>
 		</div>		
 	</div>
 	</nav>
@@ -74,17 +96,30 @@
 						</div>
 						<div class="sbox1">
 							<div class="stype">
-								<input type="radio" class="selected"><span class="ml5">对口箱</span>
-								<input type="radio"><span class="ml5">飞机盒</span>
-								<input type="radio"><span class="ml5">天地盖</span>
+								<label><input type="radio" class="selected"><span class="ml5">对口箱</span></label>
+								<label><input type="radio"><span class="ml5">飞机盒</span></label>
+								<label><input type="radio"><span class="ml5">天地盖</span></label>
 							</div>
 							<div class="btn-group">
-								<button class="btn btn-default"><span class="gray">查看详情</span></button>
+								<button class="btn btn-default"><span class="gray">查看详情</span>
   								<button class="dropdown-toggle btn btn-primary" type="button" data-toggle="dropdown">
   									<span class="caret"></span>
-  									<span class="sr-only">切换下拉菜单</span>
-  								</button>
-
+  									<span class="sr-only"></span>
+  								</button></button>
+								<ul class="dropdown-menu" style="min-width:100%"; role="menu">
+								        <li>
+								            <a>查看详情</a>
+								        </li>
+									    <li>
+									        <a>查看详情</a>
+									    </li>
+									    <li>
+									        <a>查看详情</a>
+									    </li>
+									    <li>
+								            <a>查看详情</a>
+								        </li>
+							    </ul>
 							</div>
 						</div>
 
@@ -98,26 +133,40 @@
 						<div class="sbox2">
 							<div>
 								<div class="size">
-									<div><input type="radio" class="ml4"><span class="ml5">外径</span></div>
+									<label><input type="radio" class="ml4"><span class="ml5">外径</span></label>
 									<span class="ml5">长<input type="text">mm</span>
 									<span class="ml5">宽<input type="text">mm</span>
 									<span class="ml5">高<input type="text">mm</span>
 			
 								</div>
 								<div class="size">
-									<div>			
-									<input type="radio" class="ml4"><span class="ml5">内径</span></div>
+									<label>			
+									<input type="radio" class="ml4"><span class="ml5">内径</span></label>
 									<span class="ml5">长<input type="text">mm</span>
 									<span class="ml5">宽<input type="text">mm</span>
 									<span class="ml5">高<input type="text">mm</span>							
 								</div>
 							</div>
 							<div class="btn-group f">
-									<button class="btn btn-default"><span class="gray">查看详情</span></button>
+									<button class="btn btn-default"><span class="gray">查看详情</span>
 	  								<button class="dropdown-toggle btn btn-primary" type="button" data-toggle="dropdown">
 	  									<span class="caret"></span>
 	  									<span class="sr-only">切换下拉菜单</span>
-  								</button>
+  									</button></button>
+  									<ul class="dropdown-menu" style="min-width:100%"; role="menu">
+								        <li>
+								            <a>查看详情</a>
+								        </li>
+									    <li>
+									        <a>查看详情</a>
+									    </li>
+									    <li>
+									        <a>查看详情</a>
+									    </li>
+									    <li>
+								            <a>查看详情</a>
+								        </li>
+							    </ul>
 							</div>
 						</div>
 					</div>
@@ -129,29 +178,42 @@
 						</div>
 						<div class="sbox3">
 							<div class="relbox3">
-								<div>
+								<label>
 								<input type="radio"><span class="ml5">三层A瓦优质</span>
-								</div>
-								<div>
+								</label>
+								<label>
 								<input type="radio"><span class="ml5">三层A瓦优质</span>
-								</div>
-								<div>
+								</label>
+								<label>
 								<input type="radio"><span class="ml5">三层A瓦优质</span>
-								</div>
-								<div>
+								</label>
+								<label>
 								<input type="radio"><span class="ml5">三层A瓦优质</span>
-								</div>
-								<div>
+								</label>
+								<label>
 								<input type="radio"><span class="ml5">三层A瓦优质</span>
-								</div>
+								</label>
 							</div>
 							<div class="btn-group">
-								<button class="btn btn-default"><span class="gray">查看详情</span></button>
+								<button class="btn btn-default"><span class="gray">查看详情</span>
   								<button class="dropdown-toggle btn btn-primary" type="button" data-toggle="dropdown">
   									<span class="caret"></span>
   									<span class="sr-only">切换下拉菜单</span>
-  								</button>
-
+  								</button></button>
+								<ul class="dropdown-menu" style="min-width:100%; role="menu">
+								        <li>
+								            <a >查看详情</a>
+								        </li>
+									    <li>
+									        <a>查看详情</a>
+									    </li>
+									    <li>
+									        <a>查看详情</a>
+									    </li>
+									    <li>
+								            <a>查看详情</a>
+								        </li>
+							    </ul>
 							</div>
 						</div>
 					</div>
