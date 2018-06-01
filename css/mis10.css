@@ -531,3 +531,22 @@ input[type="text"]{
 	vertical-align: middle;
 }
 
+
+@media screen and (max-width: 1000px) {
+ 	.foottop{
+ 		height: 100%;
+ 	}
+	.footlink2{
+		display: flex;
+	}
+
+    .foottel>img{
+    	width:80%;
+
+    }
+	.foottel{
+		display: inline-block;
+		margin-top:10px;
+		
+	}
+}
