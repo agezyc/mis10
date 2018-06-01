@@ -21,6 +21,14 @@ h4{
         margin-top: 0.1rem;
         
     }
+
+    .foottel>img{
+    	width:80%;
+
+    }
+	.foottel{
+		margin-top:10px;
+	}
 }
 
 
