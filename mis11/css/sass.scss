@@ -1,0 +1,121 @@
+$heightbut: 42px;
+$baccolor:#5fc0cd;
+$fontcolor:#FFF;
+$fontzize:20px;
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 50.5%;
+    }
+   
+  
+}
+
+@media screen and (min-width: 321px) and (max-width:768px) {
+    html {
+        font-size:50.5%;
+    }
+ 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1040px) {
+    html {
+        font-size: 62.5%;
+    }
+   
+  
+}
+
+
+.icon{
+		z-index: 2;
+		position:absolute;
+		background-repeat: no-repeat; 
+		background-position: 15px 58%;
+		width: 58px;
+		height:56px;
+		background-size:15px;
+	}
+
+
+
+
+html, body{
+	margin:0;
+	padding: 0;
+}
+
+.nostyle
+{ 
+	text-decoration: none;
+	align-items:center;
+}
+header{
+
+	margin:0;
+	padding:0;
+	width:100%;
+	.hed{
+		padding-left:15px;
+		padding-right: 15px;
+		height:$heightbut;
+		background:$baccolor;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		div{
+			a{
+				color:$fontcolor;
+				@extend .nostyle;
+			 }
+			.login{
+					font-size:1.7rem;
+			}
+		}
+	}
+}
+
+main{
+	background:#eff0f4;
+	input[type="text"]{
+		width:100%;
+		height:50px;
+		border:0;
+		
+	}
+	.jian{
+		padding-top:15px;
+		position: relative;
+		
+	}
+	.user{
+		padding-left:50px;
+	}
+	.icon-tel{
+		@extend .icon;
+		background-image:url(../img/1.gif);
+	}
+	.icon-key{
+		@extend .icon;
+		background-image:url(../img/2.png);
+	}
+}
+
+footer{
+	
+	button{
+	
+		width:100%;
+		height:$heightbut;
+		background:$baccolor;
+		text-align: center;
+		color:#FFF;
+		font-size:2rem;
+	}
+	a{
+		color:$baccolor;
+		font-size:1.5rem;
+		float:right;
+		@extend .nostyle;
+	}	
+}
