@@ -1,0 +1,112 @@
+$blue:#5fc0cd;
+$white:#FFF;
+
+
+html,body{
+	margin:0;
+	padding: 0;
+}
+
+.homepage{
+	padding-left:1rem;
+	display: flex;
+	height: 38px;
+	justify-content:space-between;
+	align-items:center;
+	background:$blue; 
+	color:$white;
+	font-size:1.5rem;
+	.ct{
+		margin-right: 3rem;
+	}
+}
+
+main{
+	.topcontent{
+		display:flex;
+		height:150px;
+		background:url(../img/task5-1_02.png) no-repeat;
+		background-size:100%;
+		align-items:center;
+		.headport{
+			margin-left:1rem;
+			height:6rem;
+			width: 6rem;
+		}
+		.name{
+			color:$white;
+			margin-left:1rem;
+		}
+		.small{
+			font-size:8px;
+		}
+	}
+	.bottomcontent{
+		display:flex;
+		ul{
+			padding:0;
+			margin:0;
+			list-style: none;
+			width:100%;
+			.bod{
+				font-size:20px;
+				color:$blue;
+
+			}
+			li:nth-child(1){
+				font-weight: bold;
+			}
+			li{
+
+				line-height: 48px;
+				height:48px;
+				border-bottom: 1px solid #e1e5e7;
+				margin-left:1rem;
+				.grey{
+					border-left:1px solid #e1e5e7;
+					margin-left:0.2rem;
+					padding-left:0.5rem;
+				}
+				.red{
+					color:#ff0000;
+				}
+			}
+			.star{
+
+				width:20px;
+				height:15px;
+			}
+			.lasttro{
+				height:100%;
+			}
+		}
+
+	}
+
+
+}
+
+footer{
+	display:flex;
+	justify-content:space-between;
+	.btn1{
+		border-radius: 5px;
+		border:1px solid $blue;
+		height:45px;
+		color:$blue;
+		width:48%;
+		background:$white;
+		
+	}
+	.btn2{
+		border-radius: 5px;
+		border:1px solid $blue;
+		height:45px;
+		color:$white;
+		background:$blue;
+		width:48%;
+	}
+	a{
+		text-decoration:none;
+	}
+}
