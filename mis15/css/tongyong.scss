@@ -1,0 +1,294 @@
+// 通用CSS
+
+* {
+    padding:0;
+    margin:0;
+}
+
+$green:#29b078;
+$white:#FFF;
+$grey:#999999;
+$slowgrey:#d0d6d9;
+$orange:#f1a750;
+$fafa:#fafafa;
+
+
+
+footer {
+    height: 202px;
+    background: $green;
+    color:$white;
+    
+    p {
+        font-size:16px;
+        margin-bottom:24px;
+    }
+    span {
+        font-size:14px;
+        margin-right:30px;
+    }
+    .boot {
+        text-align: center;
+        span {
+            font-size: 12px;
+        }
+    }
+    .footrow {
+        @extend .isinline;
+        vertical-align: top;
+        margin-top:30px;
+        margin-right:125px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 100%;
+    .footflex {
+        display: flex;
+        flex-direction: column;
+        margin-left:10px;
+    }
+    p {
+        margin:5px 0px;
+    }
+    .footrow {
+        margin:5px 0px;
+    }
+ }
+}
+
+
+
+
+.container {
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width:100%;
+        overflow: hidden;
+    }
+    .navflex {
+    text-align: center;
+    }
+
+}
+
+
+
+.phonebtn {
+    width:40px;
+    height: 6px;
+    border-top:20px double;
+    border-bottom:7px solid;
+}
+
+.dropdown {
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        display: inline-block;
+        margin-left:30px;
+    }
+
+}
+
+
+
+
+.dropdown-content {
+    width:100px;
+    text-align: center;
+    background: #FFF;
+    border:1px solid; 
+    position: absolute;
+    display: none;
+    
+}
+
+.dropdown-content ul {
+
+    color:black;
+
+}
+.dropdown-content li a{
+    display: inline-block;
+    padding:14px;
+    
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color:black;
+}
+.dropdown-content a:hover {
+    color:red;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+.dropdown:active .dropdown-content {
+    display: block;
+}
+.fl {
+    float:left;
+}
+
+.fr {
+    float: right;
+}
+
+.isinline {
+    display: inline-block;
+}
+
+.vtm {
+    vertical-align: middle;
+}
+
+.mt5 {
+    margin-top:8px;
+}
+
+.mt6rem {
+    margin-top:6rem;
+}
+
+@media screen and (max-width:768px) {
+    .mt6rem {
+        margin-top:6rem;
+        float:none;
+    }
+}
+
+.ml15 {
+    margin-left:15px;
+}
+
+.fw {
+    font-weight: 400;
+}
+
+.pd20 {
+    text-align:left;
+    padding:15px; 
+}
+
+
+.grey {
+    color:$grey;
+    font-size:14px;
+}
+
+.green {
+    color:$green;
+}
+
+.red {
+    color:red;
+}
+
+.black {
+    color:black;
+}
+
+.txcenter {
+     text-align:center;
+}
+// 头部CSS
+.headtop {
+    width:100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: $white;
+    a {
+        font-size: 0;
+    }
+}
+
+
+.headbottom {
+    height: 6.0625rem;
+    line-height: 6.0625rem;
+    background: $green;
+    
+    img {
+      vertical-align: middle;
+
+    }
+    ul {
+        a {
+            color:$white;
+            text-decoration: none;
+        }
+        li:hover {
+            border-bottom:5px solid $white;
+        }
+        li {
+            height: 5.725rem;
+            width:100px;
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            font-size:16px;
+            font-weight: 700;
+        }
+        li:nth-child(4) {
+            width:70px;
+            text-align: right;
+        }
+        li:nth-child(4):hover {
+            border:none;
+        }
+    }
+}
+
+.phonelogin {
+    display: none;
+}
+
+// .phonenav {
+//     display: inline-block;
+//     width:30px;
+//     height: 20px;
+//     border-top:2px solid black;
+//     border-bottom:2px double black; 
+//     border-left:1px solid black;
+//     border-right:1px solid black;
+// }
+
+// .hidnav {
+//     display: none;
+// }
+
+// .phonenav:active .hidnav{
+//     display: block;
+// }
+
+
+@media screen and (max-width: 768px) {
+    .phonelogin {
+        display: block;
+    }
+    .pcnav {
+        display: none;
+    }
+    .headimg {
+        display:none;
+    }
+    a {
+        margin:10px;
+        padding:10px;
+    }
+    
+
+}
+
