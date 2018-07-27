@@ -2,39 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>职位列表</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/tongyong.css">
 </head>
 <body>
 <header>
     <section class="headtop">
         <div class="container">    
             <span class="green">客服热线：010-594-78634</span>
-            <div class="fr mt5">
+            <div class="fr mt5 headimg">
                 <a href="">
                     <i class="headicon ml15"><img src="img/zzzz_03.jpg" alt=""></i>
                     <i class="headicon ml15"><img src="img/zzzz_05.jpg" alt=""></i>
                     <i class="headicon ml15"><img src="img/zzzz_07.jpg" alt=""></i>
                 </a>
             </div>
+            <div class="fr phonelogin">
+                    <div> 登录 <span class="green"> | </span> 注册 </div>
+            </div>
         </div>
-    </section>
+    </section>      
+     
     <section class="headbottom">
-        <div class="container">
+        <div class="container navflex">
             <img src="img/zzzz_13.png" alt="">
-            <ul class="fr">
+            <ul class="fr pcnav">
                 <li><a href="home.html">首页</a></li>
                 <li><a href="zw.html">职业</a></li>
                 <li><a href="zl.html">推荐</a></li>
                 <li><a href="zl.html">关于</a></li>
             </ul>
+        <div class="dropdown">
+                <div class="phonebtn"></div>
+                <div class="dropdown-content">
+                    <dl>
+                        <dt><a href="home.html">首页</a></dt>
+                        <dt><a href="zw.html">职业</a></dt>
+                        <dt><a href="zl.html">推荐</a></dt>
+                        <dt><a href="zl.html">关于</a></dt>
+                    </dl>
+                </div>
+            </div>     
+           
             <!-- 左右布局如果左面是内联元素，右面直接用float r即可 -->
         </div>
+        
     </section>
 </header>
 <main>
+    
     <div class="lbo">
     </div>
 <div class="container">
@@ -71,7 +90,7 @@
     </section>
     <section class="box2">
         <h3>如何学习</h3>
-        <div class="studyrow">
+        <div class="studyrow phonemt5">
             <div class="bar">
                 <div class="whitecircle"><span>1</span></div>
                 <div class="grey isinline vtm pl10">匹配你现在的个人情况
@@ -90,13 +109,14 @@
                         寻找适合自己的岗位</div>
                 <img src="img/2_21.jpg" alt="">
             </div>
-            <div class="bar">
+            <div class="bar pml5">
                 <div class="whitecircle"><span>4</span></div>
-                <div class="grey isinline vtm pl10">匹配你现在的个人情况
+                <div class="grey isinline vtm pl10 plm5">匹配你现在的个人情况
                         寻找适合自己的岗位</div>
+                
             </div>
         </div>
-        <div class="studyrow">
+        <div class="studyrow phonemt5">
             <div class="bar">
                 <div class="whitecircle"><span>5</span></div>
                 <div class="grey isinline vtm pl10">匹配你现在的个人情况
@@ -115,9 +135,9 @@
                         寻找适合自己的岗位</div>
                 <img src="img/2_21.jpg" alt="">
             </div>
-            <div class="bar">
+            <div class="bar ">
                 <div class="whitecircle"><span>8</span></div>
-                <div class="grey isinline vtm pl10">匹配你现在的个人情况
+                <div class="grey isinline vtm pl10 plm5">匹配你现在的个人情况
                         寻找适合自己的岗位</div>
             </div>
         </div>
@@ -222,7 +242,7 @@
 </div>
 </main>
 <footer>
-    <div class="container">
+    <div class="container footflex">
         <div class="footrow">
             <p>技能树 —— 改变你我</p>
             <p>&nbsp;</p>
@@ -232,11 +252,11 @@
             <p>旗下网站</p>
             <p><span>草船云孵化器</span><span>最强IT特训营</span></p>
             <p><span>葡萄藤轻游戏</span><span>桌游精灵</span></p>
-            <p class="boot"> <span>Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号</span></p>
         </div>
-        <div class="footrow">
+        <div class="footrow fr">
             <p><img src="img/1_15.png" alt=""></p>
         </div>
+        <p class="boot"> <span>Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号</span></p>
     </div>
 </footer>
 </body>

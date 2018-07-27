@@ -112,7 +112,6 @@ footer .footrow {
   height: 6.0625rem;
   line-height: 6.0625rem;
   background: #29b078;
-  font-size: 0;
 }
 
 .headbottom img {
@@ -148,8 +147,8 @@ footer .footrow {
 }
 
 .item1 p {
-  height: 78px;
-  line-height: 78px;
+  height: 4.875rem;
+  line-height: 4.875rem;
 }
 
 .item2 {
@@ -172,6 +171,26 @@ footer .footrow {
 .item2 ul li:hover {
   background: #29b078;
   color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .item2 {
+    height: 200px;
+  }
+  .item2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item2 ul li {
+    height: 30px;
+    margin: 0;
+  }
+  .item2 ul li:hover {
+    background: none;
+    color: #29b078;
+  }
 }
 
 .item3 {
@@ -200,8 +219,8 @@ footer .footrow {
   border-color: #e1e7e8;
   border-collapse: collapse;
   font-size: 14px;
-  margin-top: 45px;
-  margin-left: 22px;
+  margin-top: 2.8125rem;
+  margin-left: 1.375rem;
 }
 
 .item4 table td {
@@ -236,6 +255,30 @@ footer .footrow {
   font-size: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  .item4 .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item4 table {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .item4 .row {
+    text-align: center;
+  }
+  .item4 table {
+    width: 98%;
+    margin: 0;
+  }
+}
+
 .item4 .relaf {
   position: relative;
 }
@@ -246,12 +289,12 @@ footer .footrow {
 
 .item4 .mask {
   width: 23.7rem;
-  height: 474px;
-  right: -5px;
+  height: 29.625rem;
+  right: -0.3125rem;
   position: absolute;
   z-index: 1;
   opacity: 0;
-  top: -25px;
+  top: -1.5625rem;
   text-align: center;
   background: black;
   -moz-transition: all 1s linear .3s;
@@ -263,6 +306,38 @@ footer .footrow {
   -webkit-transform: rotate(90deg) scale(0.5);
   -o-transform: rotate(90deg) scale(0.5);
   transform: rotate(90deg) scale(0.5);
+}
+
+@media screen and (max-width: 374px) {
+  .item4 .mask {
+    top: -0.5rem;
+    height: 31rem;
+  }
+}
+
+@media screen and (min-width: 374px) and (max-width: 425px) {
+  .item4 .mask {
+    top: -2rem;
+    left: -0.7rem;
+    height: 30.625rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .item4 .mask {
+    top: -2rem;
+    left: -0.7rem;
+    width: 26.7rem;
+    height: 30.625rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .item4 .mask {
+    top: -2rem;
+    width: 51rem;
+    height: 30.625rem;
+  }
 }
 
 .item4 .relaf:hover .mask {
@@ -287,9 +362,9 @@ footer .footrow {
   font: "微软雅黑";
   font-weight: bold;
   color: white;
-  padding: 39px;
+  padding: 2.4375rem;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5rem;
   vertical-align: middle;
   opacity: 0;
   z-index: 999;
@@ -302,4 +377,12 @@ footer .footrow {
   -webkit-transform: rotate(90deg) scale(0.5);
   -o-transform: rotate(90deg) scale(0.5);
   transform: rotate(90deg) scale(0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .item4 .maskfont {
+    padding: 5rem;
+    text-align: center;
+    padding-left: 8rem;
+  }
 }

@@ -18,9 +18,18 @@ html , body {
     padding:0;
     margin:0;
     font-size:16px;
+
 }
+
+@media screen and (max-width: 768px) {
+    font-size:13px;
+ }
+
+
+
+
 footer {
-    height: 202px;
+    
     background: $green;
     color:$white;
     
@@ -44,13 +53,105 @@ footer {
         margin-top:30px;
         margin-right:125px;
     }
+    @media screen and (max-width: 768px) {
+        
+    .footflex {
+        display: flex;
+        flex-direction: column;
+        margin-left:10px;
+    }
+    p {
+        margin:5px 0px;
+    }
+    .footrow {
+        margin:5px 0px;
+    }
+ }
 }
+
+
+
+
 .container {
     width:1200px;
     margin:0 auto;
     overflow: hidden;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        width:100%;
+        overflow: hidden;
+    }
+    .navflex {
+    text-align: center;
+    }
+
+}
+
+
+
+.phonebtn {
+    width:40px;
+    height: 6px;
+    border-top:20px double;
+    border-bottom:7px solid;
+}
+
+.dropdown {
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        display: inline-block;
+        margin-left:30px;
+    }
+
+}
+
+
+
+
+.dropdown-content {
+    width:100px;
+    text-align: center;
+    background: #FFF;
+    border:1px solid; 
+    position: absolute;
+    display: none;
+    
+}
+
+.dropdown-content ul {
+
+    color:black;
+
+}
+.dropdown-content li a{
+    display: inline-block;
+    padding:14px;
+    
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color:black;
+}
+.dropdown-content a:hover {
+    color:red;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+.dropdown:active .dropdown-content {
+    display: block;
+}
 .fl {
     float:left;
 }
@@ -73,6 +174,13 @@ footer {
 
 .mt6rem {
     margin-top:6rem;
+}
+
+@media screen and (max-width:768px) {
+    .mt6rem {
+        margin-top:6rem;
+        float:none;
+    }
 }
 
 .ml15 {
@@ -111,6 +219,7 @@ footer {
 }
 // 头部CSS
 .headtop {
+    width:100%;
     height: 2.5rem;
     line-height: 2.5rem;
     background: $white;
@@ -119,11 +228,12 @@ footer {
     }
 }
 
+
 .headbottom {
     height: 6.0625rem;
     line-height: 6.0625rem;
     background: $green;
-    font-size:0;
+    
     img {
       vertical-align: middle;
 
@@ -155,6 +265,47 @@ footer {
     }
 }
 
+.phonelogin {
+    display: none;
+}
+
+// .phonenav {
+//     display: inline-block;
+//     width:30px;
+//     height: 20px;
+//     border-top:2px solid black;
+//     border-bottom:2px double black; 
+//     border-left:1px solid black;
+//     border-right:1px solid black;
+// }
+
+// .hidnav {
+//     display: none;
+// }
+
+// .phonenav:active .hidnav{
+//     display: block;
+// }
+
+
+@media screen and (max-width: 768px) {
+    .phonelogin {
+        display: block;
+    }
+    .pcnav {
+        display: none;
+    }
+    .headimg {
+        display:none;
+    }
+    a {
+        margin:10px;
+        padding:10px;
+    }
+    
+
+}
+
 
 // homemain
 main {
@@ -181,11 +332,42 @@ main {
             padding:0;
         }
     }
+    
     .bdleftdot {
 
         height: 12rem;
         margin-top:-12rem;
         border-right:1px dotted $grey;
+    }
+    @media screen and (max-width: 768px) {
+        .lbo {
+            height: 10rem;
+        }
+        .box1col {
+            padding:0.3rem 0;
+            width:100%;
+            text-align: center;
+            p {
+              padding:5px;
+            }
+            .txl {
+                text-align: center;
+            }
+            .pd0 {
+                padding:0;
+            }
+        }
+        .phonemt5 {
+            text-align: center;
+        }
+        .bar {
+            margin:10px;
+        }
+    }
+    @media screen and (max-width: 768px) { 
+        .plm5 {
+            padding-right:25px;
+        }
     }
     .box2 {
         h3 {
@@ -219,6 +401,7 @@ main {
                 display: inline-block;
                 width:14.875rem;
             }
+        
 
             span {
                 display: inline-block;
@@ -260,6 +443,14 @@ main {
         .greencircle:hover {
             background:$green;
         }
+        @media screen and (max-width: 767px) { 
+            .studentflex {
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items: center;
+            }
+        }
     }
     h3 {
         text-align:center;
@@ -278,6 +469,25 @@ main {
                 vertical-align:middle;
             } 
             margin-bottom:70px;
+        } 
+        @media screen and (max-width: 768px) {
+            .box4 {
+                text-align: center;
+                margin:0 auto;
+            }
+            .teg {
+                margin-bottom:0;
+            }
+        }
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .box4 {
+                margin:0 auto;
+                width:90%;
+                text-align: center;
+            }
+            .teg {
+                margin-bottom:0;
+            }
         }
     .teg:hover {
         box-shadow:  5px 5px 5px #888888;
@@ -293,6 +503,21 @@ main {
             display:flex;
             justify-content:space-between;
         }
+        @media screen and (max-width: 768px) {
+            .linkrow {
+                display: flex;
+                justify-content: center;
+            }
+            .linklie {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                
+            }
+
+        }
+
+
         a {
             text-decoration:none;
             color:$grey;

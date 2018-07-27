@@ -110,7 +110,6 @@ footer .footrow {
   height: 6.0625rem;
   line-height: 6.0625rem;
   background: #29b078;
-  font-size: 0;
 }
 
 .headbottom img {
@@ -153,12 +152,39 @@ main {
 main .lpic {
   background: #f1a750;
   width: 100%;
-  height: 14.225rem;
+  height: 15.525rem;
 }
 
 main .lpic img {
   margin-right: 6.25rem;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  main .lpic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+  }
+  main img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .lpic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    text-align: center;
+  }
+  main img {
+    width: 80%;
+  }
 }
 
 main .item1 p {
@@ -196,6 +222,12 @@ main .leftcontent li:hover {
   color: #f1a750;
 }
 
+@media screen and (max-width: 767px) {
+  main .phonecenter {
+    text-align: center;
+  }
+}
+
 main .rightcontent {
   width: 54.25rem;
   height: 69.1875rem;
@@ -214,6 +246,38 @@ main .rightcontent ul li {
   list-style: none;
   text-indent: 32px;
   margin: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  main .rightcontent {
+    width: 18.8125rem;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .leftcontent {
+    height: 96rem;
+  }
+  main .rightcontent {
+    width: 28.8125rem;
+    margin: 0;
+    height: 100%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1124px) {
+  main .leftcontent {
+    height: 61.5rem;
+  }
+  main .rightcontent {
+    width: 43.8125rem;
+    margin: 0;
+    height: 100%;
+    float: right;
+  }
 }
 
 main h3 {
@@ -248,4 +312,20 @@ main .itemtop {
 
 main .itemtop .tudou {
   padding: 29px;
+}
+
+@media screen and (max-width: 1023px) {
+  main .itemtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  main .tudou img {
+    width: 100%;
+    margin: 0;
+  }
 }

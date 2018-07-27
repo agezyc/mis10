@@ -6,46 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>职位列表</title>
     <link rel="stylesheet" href="css/zl.css">
+    <link rel="stylesheet" href="css/tongyong.css">
 </head>
 <body>
 <header>
     <section class="headtop">
         <div class="container">    
             <span class="green">客服热线：010-594-78634</span>
-            <div class="fr mt5">
+            <div class="fr mt5 headimg">
                 <a href="">
                     <i class="headicon ml15"><img src="img/zzzz_03.jpg" alt=""></i>
                     <i class="headicon ml15"><img src="img/zzzz_05.jpg" alt=""></i>
                     <i class="headicon ml15"><img src="img/zzzz_07.jpg" alt=""></i>
                 </a>
             </div>
+            <div class="fr phonelogin">
+                    <div> 登录 <span class="green"> | </span> 注册 </div>
+            </div>
         </div>
-    </section>
+    </section>      
+     
     <section class="headbottom">
-        <div class="container">
+        <div class="container navflex">
             <img src="img/zzzz_13.png" alt="">
-            <ul class="fr">
-                <li><a href="">首页</a></li>
-<li><a href="zw.html">职业</a></li>
+            <ul class="fr pcnav">
+                <li><a href="home.html">首页</a></li>
+                <li><a href="zw.html">职业</a></li>
                 <li><a href="zl.html">推荐</a></li>
                 <li><a href="zl.html">关于</a></li>
             </ul>
+            <div class="dropdown">
+            <div class="phonebtn"></div>
+            <div class="dropdown-content">
+                <dl>
+                    <dt><a href="home.html">首页</a></dt>
+                    <dt><a href="zw.html">职业</a></dt>
+                    <dt><a href="zl.html">推荐</a></dt>
+                    <dt><a href="zl.html">关于</a></dt>
+                </dl>
+            </div>
+        </div>  
+           
             <!-- 左右布局如果左面是内联元素，右面直接用float r即可 -->
         </div>
+        
     </section>
 </header>
+
 <main>
     <div class="lpic">
         <div class="container">
             <img src="img/1_03.jpg" alt="">
-            <img src="img/1_06.jpg" alt="">
         </div>
     </div>
     <div class="container">
         <section class="item1">
-            <p> <span class="fw">首页</span> > <span class="green">职业</span> </p>
+            <p> <span class="fw">首页</span> &gt; <span class="green">职业</span> </p>
         </section>
-        <section>
+        <section class="phonecenter">
             <div class="leftcontent isinline">
                 <h3>合作企业</h3>
                 <ul>
@@ -111,7 +129,7 @@
     </div>
 </main>
 <footer>
-    <div class="container">
+    <div class="container footflex">
         <div class="footrow">
             <p>技能树 —— 改变你我</p>
             <p>&nbsp;</p>
@@ -121,11 +139,11 @@
             <p>旗下网站</p>
             <p><span>草船云孵化器</span><span>最强IT特训营</span></p>
             <p><span>葡萄藤轻游戏</span><span>桌游精灵</span></p>
-            <p class="boot"> <span>Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号</span></p>
         </div>
-        <div class="footrow">
+        <div class="footrow fr">
             <p><img src="img/1_15.png" alt=""></p>
         </div>
+        <p class="boot"> <span>Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号</span></p>
     </div>
 </footer>
 </body>
